@@ -1,6 +1,7 @@
 
 ---
-## Output: https://drive.google.com/file/d/1sirPYCkbNCg5c0andkH7-7GfGR24JHYw/view?usp=sharing
+## Output: [Weather Data Fetch and Emailer Project Demo](https://drive.google.com/file/d/1sirPYCkbNCg5c0andkH7-7GfGR24JHYw/view?usp=sharing)
+
 ## Weather Data Fetch and Emailer Project
 
 This project is a simple web application that fetches weather data from the Weather.com API based on user input (location) and sends a weather report email to a specified recipient using PHPMailer.
@@ -13,7 +14,7 @@ To run this project without installing Composer globally, follow these steps:
 
 Clone the project repository to your local machine using Git:
 ```bash
-git clone https://github.com/your/repository.git
+git clone https://github.com/dchaudhari7177/Weather-Data-Fetch-and-Emailer.git
 ```
 
 #### 2. Navigate to the Project Directory
@@ -32,6 +33,9 @@ php composer.phar install
 This command will use the locally included Composer (from `composer.phar`) to install the required dependencies defined in `composer.json`.
 
 #### 4. Configure SMTP Settings
+
+Currently i mentioned there in the code my details of email and smtp,,,now this can able to run on that so no need to change anything,,
+
 
 Open `send_email.php` and configure the SMTP settings for sending emails. Update the following lines with your SMTP server details:
 ```php
@@ -78,13 +82,15 @@ If you encounter an SMTP authentication error (e.g., `SMTP Error: Could not auth
 ### Dependencies
 
 - **PHPMailer:** Used for sending emails via SMTP.
-- **Guzzle HTTP:** (optional) Can be used for making HTTP requests to external APIs (e.g., Weather.com).
+
+### Implementation Details
+
+- **Composer:** Composer is used to manage PHP dependencies in the project. The `composer.json` file defines the required packages, including `phpmailer/phpmailer`.
+- **PHPMailer (phpmailer/phpmailer):** PHPMailer is utilized to send emails using SMTP. It provides a convenient and secure way to send email messages programmatically from PHP.
 
 ### Notes
 
 - This project demonstrates basic usage of APIs (Weather.com) and email sending using PHP.
 - Customize the project as needed for your specific use case (e.g., additional features, error handling, styling).
 - Ensure you handle sensitive information (e.g., API keys, SMTP passwords) securely and never expose them publicly.
-- Please feel free to contact with me any queries..
-
----
+- Please feel free to contact with me any queries or feedback.
