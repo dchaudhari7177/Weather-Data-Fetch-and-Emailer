@@ -85,5 +85,6 @@ If you encounter an SMTP authentication error (e.g., `SMTP Error: Could not auth
 - This project demonstrates basic usage of APIs (Weather.com) and email sending using PHP.
 - Customize the project as needed for your specific use case (e.g., additional features, error handling, styling).
 - Ensure you handle sensitive information (e.g., API keys, SMTP passwords) securely and never expose them publicly.
+- Please feel free to contact with me any queries..
 
 ---

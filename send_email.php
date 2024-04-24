@@ -9,7 +9,7 @@ require 'vendor/autoload.php';
 // Function to fetch weather data using file_get_contents
 function fetchWeatherData($location)
 {
-    $weatherApiKey = '105d9578bfcf4523ba424332242404'; // Replace with your Weather API key
+    $weatherApiKey = '105d9578bfcf4523ba424332242404'; //  Weather API key
     $url = "https://api.weatherapi.com/v1/current.json?key={$weatherApiKey}&q={$location}";
 
     // Make HTTP request to the weather API
@@ -53,8 +53,8 @@ $weatherSummary = "Currently in $location, it's $condition with a temperature of
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'dipakchaudhari12717@gmail.com'; // Your Gmail email address
-            $mail->Password   = 'lsvt mbiy ifbd uecm'; // Your Gmail password
+            $mail->Username   = 'dipakchaudhari12717@gmail.com'; //  Gmail email address
+            $mail->Password   = 'lsvt mbiy ifbd uecm'; // Gmail password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
