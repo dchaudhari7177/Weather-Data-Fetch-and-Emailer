@@ -73,7 +73,7 @@
         <form action="send_email.php" method="POST">
             <div class="form-group">
                 <label for="location"><i class="fas fa-map-marker-alt"></i> Enter Location:</label>
-                <input type="text" id="location" name="location" placeholder="E.g., New York, London" required>
+                <input type="text" id="location" name="location" placeholder="E.g., New York" required>
             </div>
             <div class="form-group">
                 <label for="email"><i class="fas fa-envelope"></i> Enter Email:</label>
