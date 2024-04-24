@@ -53,8 +53,8 @@ $weatherSummary = "Currently in $location, it's $condition with a temperature of
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'dipakchaudhari171@gmail.com'; // Your Gmail email address
-            $mail->Password   = 'pbpq jvnf onjs tpua'; // Your Gmail password
+            $mail->Username   = ''; // Your Gmail email address
+            $mail->Password   = ''; // Your Gmail password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
