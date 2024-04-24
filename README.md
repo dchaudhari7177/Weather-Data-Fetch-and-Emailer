@@ -1,3 +1,4 @@
+
 ---
 
 ## Weather Data Fetch and Emailer Project
@@ -6,41 +7,29 @@ This project is a simple web application that fetches weather data from the Weat
 
 ### Installation and Setup
 
-To run this project, you'll need to have Composer installed on your machine. Follow these steps to get started:
+To run this project without installing Composer globally, follow these steps:
 
-#### 1. Install Composer
-
-- **Windows:**
-  1. Download the Composer installer from [getcomposer.org/download](https://getcomposer.org/download/).
-  2. Double-click the downloaded `Composer-Setup.exe` to run the installer.
-  3. Follow the installation wizard instructions to complete the Composer installation.
-  4. Make sure to select the option to "Install for all users" and "Add Composer to system PATH" during installation.
-
-- **Mac/Linux:**
-  1. Open a terminal window.
-  2. Run the following command to download and install Composer globally:
-     ```bash
-     curl -sS https://getcomposer.org/installer | php
-     ```
-  3. Move the downloaded `composer.phar` file to a directory in your system path:
-     ```bash
-     sudo mv composer.phar /usr/local/bin/composer
-     ```
-
-#### 2. Clone the Repository
+#### 1. Clone the Repository
 
 Clone the project repository to your local machine using Git:
 ```bash
 git clone https://github.com/your/repository.git
 ```
 
-#### 3. Install Composer Dependencies
+#### 2. Navigate to the Project Directory
 
-Navigate to the project directory and run Composer install to install the required dependencies:
+Navigate to the project directory in your terminal:
 ```bash
 cd project-directory
-composer install
 ```
+
+#### 3. Install Project Dependencies
+
+Since the `vendor` directory is included in the repository, you don't need to install Composer globally. Use the following command to install project dependencies:
+```bash
+php composer.phar install
+```
+This command will use the locally included Composer (from `composer.phar`) to install the required dependencies defined in `composer.json`.
 
 #### 4. Configure SMTP Settings
 
@@ -56,7 +45,7 @@ $mail->SMTPSecure = 'tls';  // Enable TLS encryption
 $mail->Port       = 587;  // SMTP port (e.g., 587 for TLS)
 ```
 
-#### 5. Generate App Password (if error occurs like "error: smtp error: could not authenticate.")
+#### 5. Generate App Password (if needed)
 
 If you encounter an SMTP authentication error (e.g., `SMTP Error: Could not authenticate.`) with Gmail, follow these steps:
 - Go to Google Account Settings > Security > App passwords.
